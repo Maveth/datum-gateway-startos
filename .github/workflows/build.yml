@@ -2,6 +2,9 @@ name: Build
 
 on:
   workflow_dispatch:
+  push:
+    branches: ['maveth/pow-0.4.1-18-multicoinbase', 'master']
+    paths-ignore: ['*.md']
   pull_request:
     paths-ignore: ['*.md']
     branches: ['master']
@@ -14,4 +17,4 @@ jobs:
   build:
     if: github.event.pull_request.draft == false
     uses: Start9Labs/start-technologies/.github/workflows/build.yml@master
-    # No DEV_KEY — a PR build doesn't publish, so it doesn't need the signing key.
+    # Sideload build: CI generates a throwaway signing key when DEV_KEY is unset.
