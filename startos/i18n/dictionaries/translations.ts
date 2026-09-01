@@ -116,7 +116,7 @@ export default {
     268: 'Port de la pool',
     269: 'Port du serveur DATUM distant',
     270: 'Clé publique de la pool',
-    271: 'Clé publique du serveur DATUM pour établir une connexion chiffrée. Laisser vide pour une récupération automatique.',
+    271: 'Clé publique du serveur DATUM pour établir une connexion chiffrée (128 hex). Obligatoire en pool — le champ vide n’est pas récupéré automatiquement.',
     272: 'Envoyer les worker à la pool',
     273: "Envoyer les noms d'utilisateur des mineurs stratum comme noms de sous-travailleurs au pool",
     274: "Envoyer les noms d'utilisateur complet",

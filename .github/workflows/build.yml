@@ -3,7 +3,7 @@ name: Build
 on:
   workflow_dispatch:
   push:
-    branches: ['maveth/pow-0.4.1-18-multicoinbase', 'master']
+    branches: ['maveth/pow-0.4.1-18-multicoinbase', 'maveth/pow-0.4.1-20-fly-pr17', 'master']
     paths-ignore: ['*.md']
   pull_request:
     paths-ignore: ['*.md']

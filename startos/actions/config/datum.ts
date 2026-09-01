@@ -32,7 +32,7 @@ const inputSpec = InputSpec.of({
     placeholder:
       'f21f2f0ef0aa1970468f22bad9bb7f4535146f8e4a8f646bebc93da3d89b1406f40d032f09a417d94dc068055df654937922d2c89522e3e8f6f0e649de473003',
     description: i18n(
-      'Public key of the DATUM server for initiating encrypted connection. Leave empty to auto-fetch.',
+      'Public key of the DATUM server for initiating encrypted connection (128 hex). Required for pooled mining — blank is not auto-fetched.',
     ),
   }),
   pool_pass_workers: Value.toggle({

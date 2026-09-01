@@ -116,7 +116,7 @@ const dict = {
   'Pool Port': 268,
   'Remote DATUM server port': 269,
   'Pool Pubkey': 270,
-  'Public key of the DATUM server for initiating encrypted connection. Leave empty to auto-fetch.': 271,
+  'Public key of the DATUM server for initiating encrypted connection (128 hex). Required for pooled mining — blank is not auto-fetched.': 271,
   'Pool Pass Workers': 272,
   'Pass stratum miner usernames as sub-worker names to the pool': 273,
   'Pool Pass Full Users': 274,
