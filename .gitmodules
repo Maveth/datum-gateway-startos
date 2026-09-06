@@ -1,3 +1,4 @@
-[submodule "datum_gateway"]
+﻿[submodule "datum_gateway"]
 	path = datum_gateway
-	url = https://github.com/Maveth/datum_gateway-fly.git
+	url = https://github.com/Maveth/datum_gateway-convoy.git
+

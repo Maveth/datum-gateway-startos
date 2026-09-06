@@ -1,8 +1,17 @@
-# Datum Gateway
+# Datum Gateway (MaVeTh CONVOY + PR #10)
+
+This StartOS package builds **CONVOY** DATUM Gateway with
+[PR #10](https://github.com/CONVOYMining/datum_gateway/pull/10) (YUGE / largest Blake coinbase class)
+so pooled multi-out splits are not truncated to ~17 outputs.
+
+- Gateway source: https://github.com/Maveth/datum_gateway-convoy @ `7491a50`
+- Upstream PR: https://github.com/CONVOYMining/datum_gateway/pull/10
+- For **TIDES** / similar Primes: set `pool_host` / `pool_port` and paste the **128-hex `pool_pubkey`**.
 
 ## Documentation
 
 - [OCEAN Datum documentation](https://ocean.xyz/docs) — upstream guide to DATUM, pool mining on OCEAN, and miner setup.
+- [CONVOYMining/datum_gateway](https://github.com/CONVOYMining/datum_gateway) — CONVOY Blake DATUM.
 
 ## What you get on StartOS
 
