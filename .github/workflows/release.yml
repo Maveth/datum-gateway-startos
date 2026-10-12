@@ -1,9 +1,9 @@
 name: Release
 
+# Sideload releases are published by tagAndRelease.yml.
+# This file no longer asks Start9's production registry.
 on:
-  push:
-    tags:
-      - 'v*.*'
+  workflow_dispatch:
 
 jobs:
   release:
