@@ -37,7 +37,7 @@ jobs:
         uses: softprops/action-gh-release@v2
         with:
           tag_name: ${{ github.ref_name == 'master' && 'pow_0.5.0_3' || 'pow_0.5.0_2' }}
-          name: ${{ github.ref_name == 'master' && 'DATUM Gateway StartOS #pow:0.5.0:3 (riptide patches + filter)' || 'DATUM Gateway StartOS #pow:0.5.0:2 (stock v0.5.0beta + filter)' }}
+          name: "${{ github.ref_name == 'master' && 'DATUM Gateway StartOS #pow:0.5.0:3 (riptide patches + filter)' || 'DATUM Gateway StartOS #pow:0.5.0:2 (stock v0.5.0beta + filter)' }}"
           body_path: release-notes/sideload.md
           files: dist/*.s9pk
           make_latest: ${{ github.ref_name == 'master' }}
