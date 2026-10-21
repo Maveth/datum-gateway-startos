@@ -19,7 +19,9 @@ Blake pooled mining commits to Prime **type 4** (multi-out coinbaser) instead of
 3. Configure pool host/port to your DATUM Prime (e.g. TIDES `:28916`) and **set pool pubkey**.
 4. Confirm `/coinbaser` shows multiple outs; shares should report `cb_id=4` (not `0`).
 
-Version: `#pow:0.5.0:1`
+Version: `#pow:0.5.0:3`
+
+When Template Filter is installed on the same StartOS server, this gateway asks the filter for block templates. When it is not installed, the gateway asks Bitcoin. `blocknotify` stays on Bitcoin.
 
 [DATUM Gateway](https://github.com/ocean-xyz/datum-gateway) lets ASIC miners build their own block templates against a local Bitcoin node, mining solo or through a DATUM-supporting pool. This package wires it to your node, publishes the stratum endpoint for your miners, and asks the node to notify it on every new block.
 

@@ -3,7 +3,7 @@ name: Build
 on:
   workflow_dispatch:
   push:
-    branches: ['maveth/pow-0.4.1-18-multicoinbase', 'maveth/pow-0.4.1-20-fly-pr17', 'maveth/pow-0.4.1-23-convoy-pr10', 'maveth/riptide-current-gw-reuse', 'master']
+    branches: ['maveth/pow-0.4.1-18-multicoinbase', 'maveth/pow-0.4.1-20-fly-pr17', 'maveth/pow-0.4.1-23-convoy-pr10', 'maveth/riptide-current-gw-reuse', 'maveth/pow-0.5.0-normal', 'master']
     paths-ignore: ['*.md']
   pull_request:
     paths-ignore: ['*.md']

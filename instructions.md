@@ -18,6 +18,7 @@ so pooled multi-out splits are not truncated to ~17 outputs.
 - A **Web UI** interface (the Datum Gateway dashboard) for monitoring connected miners, hashrate, and share activity.
 - A **Stratum Server** interface that your ASICs point at to receive work.
 - A pre-wired connection to a local **Bitcoin** node (cookie-authenticated, with `blocknotify` set automatically) for block template generation.
+- If **Template Filter** is installed on this server, block templates come from the filter. If it is not installed, they come from Bitcoin. `blocknotify` still goes from Bitcoin to Datum Gateway. The filter passes `submitblock` through.
 - A default configuration that pool-mines on OCEAN; switchable to another DATUM-supporting pool or solo mining through one action.
 
 ## Getting set up
