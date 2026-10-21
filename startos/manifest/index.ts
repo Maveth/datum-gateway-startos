@@ -6,7 +6,7 @@ export const manifest = setupManifest({
   title: 'Datum Gateway',
   license: 'mit',
   packageRepo: 'https://github.com/Maveth/datum-gateway-startos',
-  upstreamRepo: 'https://github.com/Maveth/datum_gateway',
+  upstreamRepo: 'https://github.com/CONVOYMining/datum_gateway',
   marketingUrl: 'https://riptide.maveth.ca',
   donationUrl: null,
   description: { short, long },

@@ -128,6 +128,10 @@ const dict = {
   'Allow hasher time rolling for BLAKE2b jobs': 280,
   'PoW algorithm': 281,
   'PoW algorithm: auto (follow GBT), blake2b (Knots header v2 / Antminer A3), or sha256d': 282,
+  'Public key of the DATUM server for initiating encrypted connection. Leave empty to auto-fetch.': 283,
+  'Migration max seconds': 284,
+  'Maximum time to remain away from the configured DATUM server after a server-requested migration (0 disables migration)': 285,
+  'Datum-Gateway settings. These are set to mine on CONVOY by default. Modify to switch to another Datum-supporting pool, or to solo mine.': 286,
 
   // common
   'Must be alphanumeric.': 1000,

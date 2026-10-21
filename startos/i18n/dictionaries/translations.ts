@@ -128,6 +128,10 @@ export default {
     280: 'Allow hasher time rolling for BLAKE2b jobs',
     281: 'algorithme PoW',
     282: 'Algorithme PoW: automatique (suit GBT), blake2b (en-tête Knots v2 / Antminer A3) ou sha256d',
+    283: 'Clé publique du serveur DATUM pour établir une connexion chiffrée. Laisser vide pour la récupérer automatiquement.',
+    284: 'Durée max de migration (secondes)',
+    285: 'Temps maximum passé hors du serveur DATUM configuré après une migration demandée par le serveur (0 désactive la migration)',
+    286: 'Paramètres de Datum Gateway. Par défaut, ils sont configurés pour miner sur CONVOY. Modifiez-les pour utiliser un autre pool compatible avec Datum ou pour miner en solo.',
 
     // common
     1000: 'Doit être alphanumérique.',

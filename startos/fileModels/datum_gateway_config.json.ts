@@ -82,6 +82,7 @@ const datumShape = z.object({
   pool_host: optString,
   pool_port: optNumber,
   pool_pubkey: optString,
+  migration_max_seconds: optNumber,
   pool_pass_workers: optBoolean,
   pool_pass_full_users: optBoolean,
   always_pay_self: optBoolean,

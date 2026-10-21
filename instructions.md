@@ -1,12 +1,9 @@
-# Datum Gateway (MaVeTh CONVOY + PR #10)
+# Datum Gateway (stock v0.5.0beta)
 
-This StartOS package builds **CONVOY** DATUM Gateway with
-[PR #10](https://github.com/CONVOYMining/datum_gateway/pull/10) (YUGE / largest Blake coinbase class)
-so pooled multi-out splits are not truncated to ~17 outputs.
+This StartOS package builds CONVOY DATUM Gateway v0.5.0beta (`69c61a9`), the same gateway as Horizon `#pow:0.5.0:1`.
 
-- Gateway source: https://github.com/Maveth/datum_gateway-convoy @ `7491a50`
-- Upstream PR: https://github.com/CONVOYMining/datum_gateway/pull/10
-- For **TIDES** / similar Primes: set `pool_host` / `pool_port` and paste the **128-hex `pool_pubkey`**.
+- Gateway source: https://github.com/CONVOYMining/datum_gateway/tree/v0.5.0beta
+- A blank pool host uses CONVOY. A blank pool pubkey is fetched from the pool.
 
 ## Documentation
 
@@ -19,7 +16,7 @@ so pooled multi-out splits are not truncated to ~17 outputs.
 - A **Stratum Server** interface that your ASICs point at to receive work.
 - A pre-wired connection to a local **Bitcoin** node (cookie-authenticated, with `blocknotify` set automatically) for block template generation.
 - If **Template Filter** is installed on this server, block templates come from the filter. If it is not installed, they come from Bitcoin. `blocknotify` still goes from Bitcoin to Datum Gateway. The filter passes `submitblock` through.
-- A default configuration that pool-mines on OCEAN; switchable to another DATUM-supporting pool or solo mining through one action.
+- A default configuration that pool-mines on CONVOY; switchable to another DATUM-supporting pool or solo mining through one action. Leave the pool host blank for CONVOY. Leave the pool pubkey blank to fetch it from the pool.
 
 ## Getting set up
 
